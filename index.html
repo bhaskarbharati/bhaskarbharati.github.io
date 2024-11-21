@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-    </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm [Your Name], a [Your Role/Profession].</p>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <div>
-            <h3>Project 1</h3>
-            <p>Description of your project.</p>
-        </div>
-        <div>
-            <h3>Project 2</h3>
-            <p>Description of your project.</p>
-        </div>
-    </section>
-    <footer>
-        <p>Contact me: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-    </footer>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="about">
+    <h1>About Me</h1>
+    <p>Welcome to my portfolio!</p>
+  </section>
+
+  <section id="projects">
+    <h1>Projects</h1>
+    <div id="projects-container"></div>
+  </section>
+
+  <section id="contact">
+    <h1>Contact</h1>
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
 </body>
 </html>
