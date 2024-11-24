@@ -3,53 +3,100 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Enhanced Portfolio</title>
+  <title>Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
   <header>
-    <nav>
+    <nav class="navbar">
       <a href="#" class="logo">[Your Name]</a>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#resume">Resume</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="home" class="section">
-    <h1>Hi, I'm <span class="highlight">[Your Name]</span></h1>
-    <p id="dynamic-text"></p>
-    <a href="#projects" class="btn">View My Work</a>
+  <section id="home" class="section home">
+    <div class="intro">
+      <h1>Hello! I'm <span>[Your Name]</span></h1>
+      <p>A <strong>Web Developer</strong> passionate about crafting beautiful web experiences.</p>
+      <a href="#projects" class="btn">My Work</a>
+    </div>
+    <img src="images/profile.png" alt="Profile Picture" class="profile-img">
   </section>
 
-  <section id="about" class="section">
+  <section id="about" class="section about">
     <h2>About Me</h2>
-    <p>I specialize in building modern, responsive, and engaging websites.</p>
-  </section>
-
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="projects-grid" id="projects-container">
-      <!-- Dynamic content will load here -->
+    <div class="about-content">
+      <div class="info">
+        <p>
+          I am a skilled web developer with a passion for creating responsive and user-friendly websites. 
+          I specialize in HTML, CSS, JavaScript, and modern frameworks like React.
+        </p>
+        <ul>
+          <li><strong>Location:</strong> Your City</li>
+          <li><strong>Experience:</strong> 5+ years</li>
+          <li><strong>Skills:</strong> HTML, CSS, JavaScript, React</li>
+        </ul>
+      </div>
+      <div class="skills">
+        <div class="skill">
+          <p>HTML</p>
+          <div class="skill-bar"><span style="width: 95%;"></span></div>
+        </div>
+        <div class="skill">
+          <p>CSS</p>
+          <div class="skill-bar"><span style="width: 90%;"></span></div>
+        </div>
+        <div class="skill">
+          <p>JavaScript</p>
+          <div class="skill-bar"><span style="width: 85%;"></span></div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="contact" class="section">
-    <h2>Contact Me</h2>
-    <form id="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn">Send</button>
-    </form>
+  <section id="resume" class="section resume">
+    <h2>Resume</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Senior Web Developer</h3>
+        <p>Company A | 2020 - Present</p>
+        <p>Responsible for designing and developing scalable web applications.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Web Developer</h3>
+        <p>Company B | 2017 - 2020</p>
+        <p>Worked on creating responsive websites and front-end components.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="images/project1.jpg" alt="Project 1">
+        <h3>Project One</h3>
+        <p>A detailed description of the project.</p>
+        <a href="#" class="btn">View More</a>
+      </div>
+      <div class="project-card">
+        <img src="images/project2.jpg" alt="Project 2">
+        <h3>Project Two</h3>
+        <p>A detailed description of the project.</p>
+        <a href="#" class="btn">View More</a>
+      </div>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+    <p>&copy; 2024 [Your Name]. All Rights Reserved.</p>
   </footer>
 </body>
 </html>
