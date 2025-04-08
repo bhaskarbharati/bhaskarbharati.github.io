@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log('Page loaded');
 
   // Typewriter Effect
-  const text = "I am an Aspiring Software Engineer|Web Developer|Data Scientist|Data Engineer|Data Analyst";
+  const text = "I am an Aspiring Data Scientist | Data Analyst | Software Engineer";
   const typewriterElement = document.getElementById('typewriter');
   let index = 0;
 
